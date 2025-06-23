@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newspages</title>
+        <!-- 引入 Bootstrap CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap-5.0.2/scss/bootstrap.css">
+    
+    <!-- 引入 Bootstrap js -->
+    <script src="bootstrap-5.0.2/dist/js/bootstrap.min.js"></script>
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- 引入 CSS 文件 -->
+    <link rel="stylesheet" href="/stylesheet.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Noto+Serif+TC:wght@200&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    
+    
+    <!--aos  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container">
+        <div class="mb-5" style="display: flex; align-items: center;">
+            <hr style="flex: 1; border: none; height: 1px; background-color: gray;">
+            <h2 class="text-center mx-3 mb-0">最新消息</h2>
+            <hr style="flex: 1; border: none; height: 1px; background-color: gray;">
+        </div>
+        <!--main-->
+        <div class="row my-5">
+            <div class="col-md-10 offset-1">
+                <h3 class="my-3">2025-2026新莊典華限定微型婚禮成家專案</h3>
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <i class="bi bi-calendar4-event px-2"></i>
+                        <p>2025/06/09</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bi bi-facebook px-2 fs-3"></i>
+                        <i class="bi bi-line fs-3"></i>
+                    </div>
+
+                    
+                </div>
+                <div>
+                    <p class="text-center">摯親好友專屬，風格跳脫傳統、盡興狂歡</br>
+                        美式迎賓酒會、星級主廚中式桌菜、婚禮企劃服務</br>
+                        適用廳房：1MF風尚、2F紅幔</br>
+                        3F伊麗莎白(僅限使用婚宴精緻桌菜)</br>
+                        崇尚簡單的儀式感</br>
+                        打造小而美的浪漫婚禮
+                    </p>
+                </div>
+                <div class="my-5">
+                    <img class="w-100" src="./img/comfortable-modern-bedroom-with-elegant-decoration-lighting-generative-ai.jpg" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        
+
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer-placeholder"></div>
+    <!-- footer end -->
+
+    <script>
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>
